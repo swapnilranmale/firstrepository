@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0;
+  padding: 10px
+}
+p {
+  color: rgb(0, 50, 70);
+  font-size: 2rem;
+  font-weight: bold;
+}

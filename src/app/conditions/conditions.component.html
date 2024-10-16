@@ -1,0 +1,6 @@
+<p>conditions works!</p>
+<!-- <h1>{{ isCar ? "You can go" : "You cant go" }}</h1> -->
+<h1 *ngIf="isCar; else stop">Go</h1>
+<ng-template #stop>
+  <h1>Stop</h1>
+</ng-template>
