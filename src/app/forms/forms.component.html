@@ -1,1 +1,34 @@
 <p>forms works!</p>
+<form #basicForm="ngForm" (ngSubmit)="onSubmit(basicForm.value)">
+  <input
+    type="text"
+    ngModel
+    name="username"
+    id=""
+    placeholder="Enter your name"
+  />
+  <br />
+  <br />
+  <input
+    type="email"
+    ngModel
+    name="email"
+    id=""
+    placeholder="Enter your name"
+  />
+  <br /><br />
+  <input
+    type="password"
+    ngModel
+    name="password"
+    id=""
+    placeholder="Enter passsword"
+  />
+  <br /><br />
+  <button type="submit">Register</button>
+</form>
+<ul>
+  <li>{{ udata.username }}</li>
+  <li>{{ udata.email }}</li>
+  <li>{{ udata.password }}</li>
+</ul>
