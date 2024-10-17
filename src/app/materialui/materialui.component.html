@@ -1,0 +1,26 @@
+<p>materialui works!</p>
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<form class="example-form">
+  <form
+    class="example-form"
+    #basicForm="ngForm"
+    (ngSubmit)="onClick(basicForm.value)"
+  >
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input
+        matInput
+        placeholder="Ex. Pizza"
+        value="Sushi"
+        ngModel
+        name="food"
+      />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+  </form>
+  <button type="submit" (click)="onClick()">Submit</button>
+</form>
