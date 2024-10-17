@@ -1,3 +1,10 @@
-<p>templatereference works!</p>
+<p>{{ nameoftitle | uppercase | lowercase }}</p>
+<p>{{ nameoftitle | slice : 3 }}</p>
+
+<p>{{ today | date : "fullDate" }}</p>
+{{ 2500.5859 | number : "1.2-3" }}
+<h4>{{ users | json | uppercase }}</h4>
+<h3>{{ 20 | currency : "INR" }}</h3>
+<strong>{{ 1 | usdinr : 84.07 : 2 }}</strong> <br />
 <input type="text" name="name" placeholder="Enter name" #box />
 <button (click)="getData(box.placeholder)">Click</button>
